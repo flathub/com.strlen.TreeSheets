@@ -17,13 +17,16 @@ modules:
     buildsystem: cmake-ninja
     config-opts:
       - -DTREESHEETS_WITH_STATIC_WXWIDGETS=ON
-      - -DCMAKE_BUILD_TYPE=Release
     builddir: true
     sources:
       - type: git
         url: https://github.com/aardappel/treesheets
-        commit: c77aac4ac00f1b42913adfb84bcaf4478d4cfbc1
+        commit: 572e7f8289c5e3f36b86c78b63f88998b0cd2388
       - type: git
         url: https://github.com/wxWidgets/wxWidgets
         dest: lib/wxWidgets
         commit: df6366ff57371f9d2d41f748514d25259e393203
+      - type: file
+        path: com.strlen.TreeSheets.appdata.xml
+    post-install:
+      - install -D ../com.strlen.TreeSheets.appdata.xml /app/share/appdata/com.strlen.TreeSheets.appdata.xml

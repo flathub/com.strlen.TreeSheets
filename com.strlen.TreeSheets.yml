@@ -22,7 +22,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/aardappel/treesheets
-        commit: 5d97630e8f55199e8f9e28bd5cd30c04d1e60f7c
+        commit: c77aac4ac00f1b42913adfb84bcaf4478d4cfbc1
       - type: git
         url: https://github.com/wxWidgets/wxWidgets
         dest: lib/wxWidgets

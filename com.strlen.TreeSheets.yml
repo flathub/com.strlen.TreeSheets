@@ -12,6 +12,7 @@ finish-args:
 cleanup:
   - /include
   - /lib
+  - /bin/wx*
 modules:
   - name: TreeSheets
     buildsystem: cmake-ninja
@@ -25,7 +26,7 @@ modules:
       - type: git
         url: https://github.com/wxWidgets/wxWidgets
         dest: lib/wxWidgets
-        commit: 3c6869605e407176d6a4dde64e1ccc272d9c65a2
+        commit: 9b9ec141fbcd604aa8bfc83da6f16fc9bf5c32e0
       - type: file
         path: com.strlen.TreeSheets.appdata.xml
     post-install:

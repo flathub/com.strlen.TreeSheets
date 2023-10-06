@@ -26,7 +26,7 @@ modules:
       - type: git
         url: https://github.com/wxWidgets/wxWidgets
         dest: lib/wxWidgets
-        commit: 3d07de66b1a8dd57bd2b869676f8dd4993042b33
+        commit: b9b0724de141696edf817fb032aa51daf699b48b
       - type: file
         path: com.strlen.TreeSheets.appdata.xml
     post-install:

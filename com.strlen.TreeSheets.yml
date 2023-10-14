@@ -22,11 +22,11 @@ modules:
     sources:
       - type: git
         url: https://github.com/aardappel/treesheets
-        commit: 20e67b3c7a030d409f615063e24a8d5323823950
+        commit: 50e1fadd617856308de4cd511b1d0efcb6af0202
       - type: git
         url: https://github.com/wxWidgets/wxWidgets
         dest: lib/wxWidgets
-        commit: 4235a018be3c42245f821959d0ee38bb67f43886
+        commit: 368a13a1a2b0d8f9a7c31935cb22dc1537e86d0b
       - type: file
         path: com.strlen.TreeSheets.appdata.xml
     post-install:

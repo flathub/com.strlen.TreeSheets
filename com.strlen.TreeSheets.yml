@@ -8,7 +8,7 @@ finish-args:
   - --socket=fallback-x11
   - --share=ipc
   - --device=dri
-  - --filesystem=home
+  - --filesystem=host
 cleanup:
   - /include
   - /lib

@@ -34,11 +34,10 @@
   </screenshots>
   <content_rating type="oars-1.0" />
   <releases>
-    <release version="6364166541" date="2023-09-30">
+    <release version="6537161350" date="2023-10-21">
       <description>
-        <p>Ready for distribution via Flathub.</p>
+        <p>Please refer to the release notes on the GitHub page.</p>
       </description>
     </release>
-    <release version="6331662287" date="2023-09-27" />
   </releases>
 </component>

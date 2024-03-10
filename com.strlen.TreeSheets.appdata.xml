@@ -9,6 +9,9 @@
   <url type="donation">https://github.com/sponsors/aardappel</url>
   <metadata_license>MIT</metadata_license>
   <project_license>Zlib</project_license>
+  <developer id="com.strlen">
+    <name>Wouter van Oortmerssen</name>
+  </developer>
   <description>
     <p>
       A &quot;hierarchical spreadsheet&quot; that is a great replacement for spreadsheets, mind mappers, outliners, PIMs, text editors and small databases.
@@ -34,7 +37,7 @@
   </screenshots>
   <content_rating type="oars-1.0" />
   <releases>
-    <release version="7589154653" date="2024-01-19">
+    <release version="7861249636" date="2024-02-13">
       <description>
         <p>Please refer to the release notes on the GitHub page.</p>
       </description>

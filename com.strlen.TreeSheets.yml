@@ -9,10 +9,6 @@ finish-args:
   - --share=ipc
   - --device=dri
   - --filesystem=host
-cleanup:
-  - /include
-  - /lib
-  - /bin/wx*
 modules:
   - name: TreeSheets
     buildsystem: cmake-ninja
@@ -22,11 +18,11 @@ modules:
     sources:
       - type: git
         url: https://github.com/aardappel/treesheets
-        commit: ce445b2ec22eb5c695032b1a21ea911635f13896
+        commit: 7ab85ae41dae31d62ceccfae530c5597e674df0c
       - type: git
         url: https://github.com/wxWidgets/wxWidgets
         dest: lib/wxWidgets
-        commit: c45c1e5462016b8c9a09fab0064469b37df04707
+        commit: e7e833fa316a0cb5dc7a7b35c4fc9ee3455ad464
       - type: file
         path: com.strlen.TreeSheets.appdata.xml
     post-install:

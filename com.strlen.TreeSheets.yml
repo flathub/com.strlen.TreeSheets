@@ -12,17 +12,11 @@ finish-args:
 modules:
   - name: TreeSheets
     buildsystem: cmake-ninja
-    config-opts:
-      - -DTREESHEETS_WITH_STATIC_WXWIDGETS=ON
     builddir: true
     sources:
       - type: git
         url: https://github.com/aardappel/treesheets
-        commit: c6bf3227fb649e44362cea5e1268902383cf173a
-      - type: git
-        url: https://github.com/wxWidgets/wxWidgets
-        dest: lib/wxWidgets
-        commit: e02c65f45f1f6af57e37127ee243fa146f5a8e5e
+        commit: c030d4c8374acb7c3fadce0f39cf4d0cb7c5466f
       - type: file
         path: com.strlen.TreeSheets.appdata.xml
     post-install:

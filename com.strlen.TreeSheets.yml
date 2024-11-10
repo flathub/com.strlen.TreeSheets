@@ -19,7 +19,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/aardappel/treesheets
-        commit: a05a34734135b3899b6c742df8a9c1338fc168b2
+        commit: 5d848e25356694b8ea2f68265e027689d3d048b0
       - type: file
         path: com.strlen.TreeSheets.appdata.xml
     post-install:

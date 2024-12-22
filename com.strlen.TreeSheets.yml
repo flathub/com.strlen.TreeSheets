@@ -2,7 +2,7 @@ app-id: com.strlen.TreeSheets
 runtime: org.freedesktop.Platform
 runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
-command: treesheets
+command: TreeSheets
 finish-args:
   - --socket=wayland
   - --socket=fallback-x11
@@ -19,7 +19,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/aardappel/treesheets
-        commit: 5d848e25356694b8ea2f68265e027689d3d048b0
+        commit: 55e3ec441efdd69e06fc8dc926557e9392dbf233
       - type: file
         path: com.strlen.TreeSheets.appdata.xml
     post-install:

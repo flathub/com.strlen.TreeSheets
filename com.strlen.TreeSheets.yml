@@ -20,6 +20,9 @@ modules:
       - type: git
         url: https://github.com/aardappel/treesheets
         commit: 55e3ec441efdd69e06fc8dc926557e9392dbf233
+        x-checker-data:
+          type: git
+          tag-pattern: ^([\d]+)$
       - type: file
         path: com.strlen.TreeSheets.appdata.xml
     post-install:

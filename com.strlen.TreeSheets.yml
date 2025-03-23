@@ -20,10 +20,13 @@ modules:
       - type: git
         url: https://github.com/aardappel/treesheets
         commit: 95816241f00ac508e0588d8ed8b90e6bdf732494
-        x-checker-data:
-          type: git
-          tag-pattern: ^([\d]+)$
         tag: '14007388016'
+        x-checker-data:
+          type: json
+          url: https://api.github.com/repos/aardappel/treesheets/releases/latest
+          tag-query: .tag_name
+          version-query: $tag
+          timestamp-query: .published_at
       - type: file
         path: com.strlen.TreeSheets.appdata.xml
     post-install:

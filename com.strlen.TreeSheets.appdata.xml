@@ -37,8 +37,11 @@
   </screenshots>
   <content_rating type="oars-1.0"/>
   <releases>
-    <release version="16121089177" date="2025-07-07">
+    <release version="16229165273" date="2025-07-11">
       <description></description>
+    </release>
+    <release version="16121089177" date="2025-07-07">
+      <description/>
     </release>
     <release version="16102442702" date="2025-07-06">
       <description/>

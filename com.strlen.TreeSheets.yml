@@ -1,6 +1,6 @@
 app-id: com.strlen.TreeSheets
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 command: TreeSheets
 finish-args:
@@ -14,19 +14,27 @@ modules:
     buildsystem: cmake-ninja
     builddir: true
     config-opts:
-      - -DGIT_WXWIDGETS_SUBMODULES=OFF
-      - -DTREESHEETS_WITH_STATIC_WXWIDGETS=ON
+      - -DFETCHCONTENT_SOURCE_DIR_WXWIDGETS=../thirdparty/wxWidgets
+      - -DFETCHCONTENT_SOURCE_DIR_LOBSTER=../thirdparty/lobster
     sources:
       - type: git
         url: https://github.com/aardappel/treesheets
-        commit: 95dc752d4cc779676f3aed9422fe15d955c44f22
-        tag: '14439181520'
+        commit: 96238646f2f3c099844feeb17abcc5dc22c3bfb4
+        tag: '2253'
         x-checker-data:
           type: json
           url: https://api.github.com/repos/aardappel/treesheets/releases/latest
           tag-query: .tag_name
           version-query: $tag
           timestamp-query: .published_at
+      - type: git
+        url: https://github.com/wxWidgets/wxWidgets
+        tag: v3.3.0
+        dest: 'thirdparty/wxWidgets'
+      - type: git
+        url: https://github.com/aardappel/lobster
+        tag: v2025.2
+        dest: 'thirdparty/lobster'
       - type: file
         path: com.strlen.TreeSheets.appdata.xml
     post-install:

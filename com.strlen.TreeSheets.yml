@@ -21,8 +21,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/aardappel/treesheets
-        commit: 96238646f2f3c099844feeb17abcc5dc22c3bfb4
-        tag: '2253'
+        commit: 52b95fa06ff695972a1b12176a0008a1aff52552
+        tag: '2259'
         x-checker-data:
           type: json
           url: https://api.github.com/repos/aardappel/treesheets/releases/latest
@@ -32,11 +32,11 @@ modules:
       - type: git
         url: https://github.com/wxWidgets/wxWidgets
         tag: v3.3.0
-        dest: 'thirdparty/wxWidgets'
+        dest: thirdparty/wxWidgets
       - type: git
         url: https://github.com/aardappel/lobster
         tag: v2025.2
-        dest: 'thirdparty/lobster'
+        dest: thirdparty/lobster
       - type: file
         path: com.strlen.TreeSheets.appdata.xml
     post-install:

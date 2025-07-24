@@ -1,4 +1,4 @@
-app-id: com.strlen.TreeSheets
+id: com.strlen.TreeSheets
 runtime: org.freedesktop.Platform
 runtime-version: '24.08'
 sdk: org.freedesktop.Sdk

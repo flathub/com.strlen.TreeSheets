@@ -35,7 +35,7 @@ modules:
         dest: thirdparty/wxWidgets
       - type: git
         url: https://github.com/aardappel/lobster
-        tag: v2025.2
+        tag: v2025.3
         dest: thirdparty/lobster
       - type: file
         path: com.strlen.TreeSheets.appdata.xml

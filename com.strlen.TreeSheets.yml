@@ -21,8 +21,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/aardappel/treesheets
-        commit: 88cf3ad41506ec0539a084a97cd1ab010b34fa24
-        tag: '2766'
+        commit: bfa0d485f02ee25ab4a439458719d18122d2cf40
+        tag: '2768'
         x-checker-data:
           type: json
           url: https://api.github.com/repos/aardappel/treesheets/releases/latest

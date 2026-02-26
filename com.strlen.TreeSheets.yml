@@ -24,8 +24,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/aardappel/treesheets
-        commit: 775f1374de620ac9ae9d2d4a2ce85b77a407cb0c
-        tag: '3005'
+        commit: c60d22d37c75b0d240778e16b040fd92e3da4b28
+        tag: '3010'
         x-checker-data:
           type: json
           url: https://api.github.com/repos/aardappel/treesheets/releases/latest
@@ -40,7 +40,3 @@ modules:
         url: https://github.com/aardappel/lobster
         tag: v2025.4
         dest: thirdparty/lobster
-      - type: file
-        path: com.strlen.TreeSheets.appdata.xml
-    post-install:
-      - install -D ../com.strlen.TreeSheets.appdata.xml /app/share/appdata/com.strlen.TreeSheets.appdata.xml

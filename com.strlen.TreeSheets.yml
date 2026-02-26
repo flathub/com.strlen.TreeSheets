@@ -38,5 +38,5 @@ modules:
         dest: thirdparty/wxWidgets
       - type: git
         url: https://github.com/aardappel/lobster
-        tag: v2025.4
+        tag: v2026.1
         dest: thirdparty/lobster

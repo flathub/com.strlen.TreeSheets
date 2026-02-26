@@ -13,14 +13,21 @@ build-options:
   no-debuginfo: true
 modules:
   - name: TreeSheets
-    buildsystem: cmake-ninja
+    buildsystem: simple
     builddir: true
-    config-opts:
-      - -DCMAKE_BUILD_TYPE=Release
-      - -DFETCHCONTENT_SOURCE_DIR_WXWIDGETS=../thirdparty/wxWidgets
-      - -DFETCHCONTENT_SOURCE_DIR_LOBSTER=../thirdparty/lobster
-      - -DwxBUILD_INSTALL=OFF
-      - -DwxBUILD_SHARED=OFF
+    build-commands:
+      - |
+        TS_VERSION=$(git describe --tags --abbrev=0)
+        cmake -S . -B _build \
+          -DCMAKE_BUILD_TYPE=Release \
+          -DTREESHEETS_VERSION=$TS_VERSION \
+          -DFETCHCONTENT_SOURCE_DIR_WXWIDGETS=thirdparty/wxWidgets \
+          -DFETCHCONTENT_SOURCE_DIR_LOBSTER=thirdparty/lobster \
+          -DwxBUILD_INSTALL=OFF \
+          -DwxBUILD_SHARED=OFF \
+          -DCMAKE_INSTALL_PREFIX=/app
+      - cmake --build _build -j4
+      - cmake --install _build
     sources:
       - type: git
         url: https://github.com/aardappel/treesheets

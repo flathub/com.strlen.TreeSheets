@@ -31,8 +31,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/aardappel/treesheets
-        commit: 5baa7f3424db78f2300debdce067e33e3d0a39b9
-        tag: '3039'
+        commit: 84b08950c331cfbaf53a8618a81806ccea05f65e
+        tag: '3040'
         x-checker-data:
           type: json
           url: https://api.github.com/repos/aardappel/treesheets/releases/latest
@@ -41,9 +41,11 @@ modules:
           timestamp-query: .published_at
       - type: git
         url: https://github.com/wxWidgets/wxWidgets
+        commit: aa1a25e7b511c0a4e341a3c722e6eac2aa159ab6
         tag: v3.2.10
         dest: thirdparty/wxWidgets
       - type: git
         url: https://github.com/aardappel/lobster
+        commit: 3b836b0cbc78e60e141ace8d542e9a9104ba09d6
         tag: v2026.1
         dest: thirdparty/lobster

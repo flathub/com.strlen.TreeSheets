@@ -41,8 +41,8 @@ modules:
           timestamp-query: .published_at
       - type: git
         url: https://github.com/wxWidgets/wxWidgets
-        commit: aa1a25e7b511c0a4e341a3c722e6eac2aa159ab6
-        tag: v3.2.10
+        commit: db1005db3dea2c37a46fb455a9a02e37aa360751
+        tag: v3.3.2
         dest: thirdparty/wxWidgets
       - type: git
         url: https://github.com/aardappel/lobster

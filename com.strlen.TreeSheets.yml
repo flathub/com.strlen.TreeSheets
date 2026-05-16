@@ -46,6 +46,6 @@ modules:
         dest: thirdparty/wxWidgets
       - type: git
         url: https://github.com/aardappel/lobster
-        commit: 3b836b0cbc78e60e141ace8d542e9a9104ba09d6
-        tag: v2026.1
+        commit: a24fce44e4c2cf77ef952d22be8deb6be8b35cff
+        tag: v2026.2
         dest: thirdparty/lobster

@@ -31,21 +31,19 @@ modules:
     sources:
       - type: git
         url: https://github.com/aardappel/treesheets
-        commit: e026324c0bf3ee462853f5ae7212437a9a4139cb
-        tag: '3177'
+        commit: caa8f04952ce213cee8c105053e2a446a6b3108e
+        tag: '3199'
         x-checker-data:
           type: json
           url: https://api.github.com/repos/aardappel/treesheets/releases/latest
           tag-query: .tag_name
           version-query: $tag
           timestamp-query: .published_at
-      - type: git
-        url: https://github.com/wxWidgets/wxWidgets
-        commit: db1005db3dea2c37a46fb455a9a02e37aa360751
-        tag: v3.3.2
+      - type: archive
+        url: https://github.com/wxWidgets/wxWidgets/releases/download/v3.3.2/wxWidgets-3.3.2.tar.bz2
+        sha256: 50a28cb668de47b0e006cd6ebed8cf4f76c1cac6116fb3c978c44478219103f2
         dest: thirdparty/wxWidgets
-      - type: git
-        url: https://github.com/aardappel/lobster
-        commit: a24fce44e4c2cf77ef952d22be8deb6be8b35cff
-        tag: v2026.2
+      - type: archive
+        url: https://github.com/aardappel/lobster/archive/refs/tags/v2026.3.tar.gz
+        sha256: 403ef33cbe9680afd0e316e6f82f1abf06f3e3782e38cd87e05f49dd350db14a
         dest: thirdparty/lobster

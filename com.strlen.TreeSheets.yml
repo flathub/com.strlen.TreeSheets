@@ -21,8 +21,10 @@ modules:
         cmake -S . -B _build \
           -DCMAKE_BUILD_TYPE=Release \
           -DTREESHEETS_VERSION=$TS_VERSION \
+          -DENABLE_WXPDFDOC=TRUE \
           -DFETCHCONTENT_SOURCE_DIR_WXWIDGETS=thirdparty/wxWidgets \
           -DFETCHCONTENT_SOURCE_DIR_LOBSTER=thirdparty/lobster \
+          -DFETCHCONTENT_SOURCE_DIR_WXPDFDOC=thirdparty/wxpdfdoc \
           -DwxBUILD_INSTALL=OFF \
           -DwxBUILD_SHARED=OFF \
           -DCMAKE_INSTALL_PREFIX=/app
@@ -47,3 +49,7 @@ modules:
         url: https://github.com/aardappel/lobster/archive/refs/tags/v2026.4.tar.gz
         sha256: db430e0310adddb5667648597b56efc2c198659626f92805b2e4f35932f88d8f
         dest: thirdparty/lobster
+      - type: archive
+        url: https://github.com/utelle/wxpdfdoc/archive/refs/tags/v1.4.0.tar.gz
+        sha256: f651471dfe24b49947434e5930ee550ba40c496c194a64050892ee1799357c97
+        dest: thirdparty/wxpdfdoc

@@ -45,11 +45,26 @@ modules:
         url: https://github.com/wxWidgets/wxWidgets/releases/download/v3.3.2/wxWidgets-3.3.2.tar.bz2
         sha256: 50a28cb668de47b0e006cd6ebed8cf4f76c1cac6116fb3c978c44478219103f2
         dest: thirdparty/wxWidgets
+        x-checker-data:
+          type: html
+          url: https://raw.githubusercontent.com/aardappel/treesheets/master/CMakeLists.txt
+          version-pattern: wxWidgets-([\d.]+)\.tar\.bz2
+          url-template: https://github.com/wxWidgets/wxWidgets/releases/download/v$version/wxWidgets-$version.tar.bz2
       - type: archive
         url: https://github.com/aardappel/lobster/archive/refs/tags/v2026.8.tar.gz
         sha256: 9be91bdadd0987caa62f6e3450efa3943b3a4b337fc51c28826984717cc6d8da
         dest: thirdparty/lobster
+        x-checker-data:
+          type: html
+          url: https://raw.githubusercontent.com/aardappel/treesheets/master/cmake/Lobster.cmake
+          version-pattern: lobster/archive/refs/tags/v([\d.]+)\.tar\.gz
+          url-template: https://github.com/aardappel/lobster/archive/refs/tags/v$version.tar.gz
       - type: archive
         url: https://github.com/utelle/wxpdfdoc/archive/refs/tags/v1.4.0.tar.gz
         sha256: f651471dfe24b49947434e5930ee550ba40c496c194a64050892ee1799357c97
         dest: thirdparty/wxpdfdoc
+        x-checker-data:
+          type: html
+          url: https://raw.githubusercontent.com/aardappel/treesheets/master/cmake/WxPdfDoc.cmake
+          version-pattern: wxpdfdoc/archive/refs/tags/v([\d.]+)\.tar\.gz
+          url-template: https://github.com/utelle/wxpdfdoc/archive/refs/tags/v$version.tar.gz

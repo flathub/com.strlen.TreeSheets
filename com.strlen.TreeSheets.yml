@@ -25,6 +25,7 @@ modules:
           -DFETCHCONTENT_SOURCE_DIR_WXWIDGETS=thirdparty/wxWidgets \
           -DFETCHCONTENT_SOURCE_DIR_LOBSTER=thirdparty/lobster \
           -DFETCHCONTENT_SOURCE_DIR_WXPDFDOC=thirdparty/wxpdfdoc \
+          -DFETCHCONTENT_SOURCE_DIR_MONOCYPHER=thirdparty/monocypher \
           -DwxBUILD_INSTALL=OFF \
           -DwxBUILD_SHARED=OFF \
           -DCMAKE_INSTALL_PREFIX=/app
@@ -33,8 +34,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/aardappel/treesheets
-        commit: 4fd0ab43ec2eaf9863c452c0ee638e5184b3b149
-        tag: '3455'
+        commit: 015fc6921177a7619868a9777f7ea72c30aafeb1
+        tag: '3523'
         x-checker-data:
           type: json
           url: https://api.github.com/repos/aardappel/treesheets/releases/latest
@@ -68,3 +69,12 @@ modules:
           url: https://raw.githubusercontent.com/aardappel/treesheets/master/cmake/WxPdfDoc.cmake
           version-pattern: wxpdfdoc/archive/refs/tags/v([\d.]+)\.tar\.gz
           url-template: https://github.com/utelle/wxpdfdoc/archive/refs/tags/v$version.tar.gz
+      - type: archive
+        url: https://github.com/LoupVaillant/Monocypher/archive/refs/tags/4.0.3.tar.gz
+        sha256: a7cbae546fbdc489bca632c3747e1ceb8ca3d4bd39e2706a0916f28ccd280e50
+        dest: thirdparty/monocypher
+        x-checker-data:
+          type: html
+          url: https://raw.githubusercontent.com/aardappel/treesheets/master/cmake/Monocypher.cmake
+          version-pattern: Monocypher/archive/refs/tags/([\d.]+)\.tar\.gz
+          url-template: https://github.com/LoupVaillant/Monocypher/archive/refs/tags/$version.tar.gz

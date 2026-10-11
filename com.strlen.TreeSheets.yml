@@ -34,8 +34,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/aardappel/treesheets
-        commit: 0d6c0a39068dcf8ccf15b7f465796082fba187eb
-        tag: v2.4.0
+        commit: 37fe406838829e6528df1b2ef2b306dfce2cd46c
+        tag: v2.5.1
         x-checker-data:
           type: json
           url: https://api.github.com/repos/aardappel/treesheets/releases/latest
@@ -43,8 +43,8 @@ modules:
           version-query: $tag
           timestamp-query: .published_at
       - type: archive
-        url: https://github.com/wxWidgets/wxWidgets/releases/download/v3.3.2/wxWidgets-3.3.2.tar.bz2
-        sha256: 50a28cb668de47b0e006cd6ebed8cf4f76c1cac6116fb3c978c44478219103f2
+        url: https://github.com/wxWidgets/wxWidgets/releases/download/v3.3.4/wxWidgets-3.3.4.tar.bz2
+        sha256: 815c16cafa4fcbfcf25c5c0a3418309c62257b8a3b6f91d85a1367a134f98c98
         dest: thirdparty/wxWidgets
         x-checker-data:
           type: html

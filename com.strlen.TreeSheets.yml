@@ -26,6 +26,7 @@ modules:
           -DFETCHCONTENT_SOURCE_DIR_LOBSTER=thirdparty/lobster \
           -DFETCHCONTENT_SOURCE_DIR_WXPDFDOC=thirdparty/wxpdfdoc \
           -DFETCHCONTENT_SOURCE_DIR_MONOCYPHER=thirdparty/monocypher \
+          -DFETCHCONTENT_SOURCE_DIR_LIBUNIBREAK=thirdparty/libunibreak \
           -DwxBUILD_INSTALL=OFF \
           -DwxBUILD_SHARED=OFF \
           -DCMAKE_INSTALL_PREFIX=/app
@@ -78,3 +79,11 @@ modules:
           url: https://raw.githubusercontent.com/aardappel/treesheets/master/cmake/Monocypher.cmake
           version-pattern: Monocypher/archive/refs/tags/([\d.]+)\.tar\.gz
           url-template: https://github.com/LoupVaillant/Monocypher/archive/refs/tags/$version.tar.gz
+      - type: archive
+        url: https://github.com/adah1972/libunibreak/releases/download/libunibreak_8_0/libunibreak-8.0.tar.gz
+        sha256: 9c4fad6e517338a098373acc9f35579ae2c325e6446666fb9ac2666ba15ceba4
+        dest: thirdparty/libunibreak
+        x-checker-data:
+          type: html
+          url: https://raw.githubusercontent.com/aardappel/treesheets/master/cmake/Unibreak.cmake
+          pattern: (https://github\.com/adah1972/libunibreak/releases/download/libunibreak_[\d_]+/libunibreak-([\d.]+)\.tar\.gz)

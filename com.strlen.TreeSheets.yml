@@ -35,8 +35,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/aardappel/treesheets
-        commit: 82f27057d37b53a00d600d1bdd62eb329aafaccc
-        tag: v2.22.5
+        commit: 85c8095ef9e6d2f9a9576fc3b206008b195ba512
+        tag: v2.22.7
         x-checker-data:
           type: json
           url: https://api.github.com/repos/aardappel/treesheets/releases/latest
@@ -44,21 +44,24 @@ modules:
           version-query: $tag
           timestamp-query: .published_at
       - type: archive
-        url: https://github.com/wxWidgets/wxWidgets/releases/download/v3.3.4/wxWidgets-3.3.4.tar.bz2
+        url: 
+          https://github.com/wxWidgets/wxWidgets/releases/download/v3.3.4/wxWidgets-3.3.4.tar.bz2
         sha256: 815c16cafa4fcbfcf25c5c0a3418309c62257b8a3b6f91d85a1367a134f98c98
         dest: thirdparty/wxWidgets
         x-checker-data:
           type: html
           url: https://raw.githubusercontent.com/aardappel/treesheets/master/CMakeLists.txt
           version-pattern: wxWidgets-([\d.]+)\.tar\.bz2
-          url-template: https://github.com/wxWidgets/wxWidgets/releases/download/v$version/wxWidgets-$version.tar.bz2
+          url-template: 
+            https://github.com/wxWidgets/wxWidgets/releases/download/v$version/wxWidgets-$version.tar.bz2
       - type: archive
         url: https://github.com/aardappel/lobster/archive/refs/tags/v2026.8.tar.gz
         sha256: 9be91bdadd0987caa62f6e3450efa3943b3a4b337fc51c28826984717cc6d8da
         dest: thirdparty/lobster
         x-checker-data:
           type: html
-          url: https://raw.githubusercontent.com/aardappel/treesheets/master/cmake/Lobster.cmake
+          url: 
+            https://raw.githubusercontent.com/aardappel/treesheets/master/cmake/Lobster.cmake
           version-pattern: lobster/archive/refs/tags/v([\d.]+)\.tar\.gz
           url-template: https://github.com/aardappel/lobster/archive/refs/tags/v$version.tar.gz
       - type: archive
@@ -67,7 +70,8 @@ modules:
         dest: thirdparty/wxpdfdoc
         x-checker-data:
           type: html
-          url: https://raw.githubusercontent.com/aardappel/treesheets/master/cmake/WxPdfDoc.cmake
+          url: 
+            https://raw.githubusercontent.com/aardappel/treesheets/master/cmake/WxPdfDoc.cmake
           version-pattern: wxpdfdoc/archive/refs/tags/v([\d.]+)\.tar\.gz
           url-template: https://github.com/utelle/wxpdfdoc/archive/refs/tags/v$version.tar.gz
       - type: archive
@@ -76,14 +80,18 @@ modules:
         dest: thirdparty/monocypher
         x-checker-data:
           type: html
-          url: https://raw.githubusercontent.com/aardappel/treesheets/master/cmake/Monocypher.cmake
+          url: 
+            https://raw.githubusercontent.com/aardappel/treesheets/master/cmake/Monocypher.cmake
           version-pattern: Monocypher/archive/refs/tags/([\d.]+)\.tar\.gz
           url-template: https://github.com/LoupVaillant/Monocypher/archive/refs/tags/$version.tar.gz
       - type: archive
-        url: https://github.com/adah1972/libunibreak/releases/download/libunibreak_8_0/libunibreak-8.0.tar.gz
+        url: 
+          https://github.com/adah1972/libunibreak/releases/download/libunibreak_8_0/libunibreak-8.0.tar.gz
         sha256: 9c4fad6e517338a098373acc9f35579ae2c325e6446666fb9ac2666ba15ceba4
         dest: thirdparty/libunibreak
         x-checker-data:
           type: html
-          url: https://raw.githubusercontent.com/aardappel/treesheets/master/cmake/Unibreak.cmake
-          pattern: (https://github\.com/adah1972/libunibreak/releases/download/libunibreak_[\d_]+/libunibreak-([\d.]+)\.tar\.gz)
+          url: 
+            https://raw.githubusercontent.com/aardappel/treesheets/master/cmake/Unibreak.cmake
+          pattern: 
+            (https://github\.com/adah1972/libunibreak/releases/download/libunibreak_[\d_]+/libunibreak-([\d.]+)\.tar\.gz)

@@ -35,8 +35,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/aardappel/treesheets
-        commit: fa2d9438815366b1b6ec70e3bef5cab137506a7f
-        tag: v2.23.10
+        commit: c6190d66053adeef1a89d6ad6a2965b2ec917573
+        tag: v2.24.0
         x-checker-data:
           type: json
           url: https://api.github.com/repos/aardappel/treesheets/releases/latest
@@ -55,8 +55,8 @@ modules:
           url-template: 
             https://github.com/wxWidgets/wxWidgets/releases/download/v$version/wxWidgets-$version.tar.bz2
       - type: archive
-        url: https://github.com/aardappel/lobster/archive/refs/tags/v2026.8.tar.gz
-        sha256: 9be91bdadd0987caa62f6e3450efa3943b3a4b337fc51c28826984717cc6d8da
+        url: https://github.com/aardappel/lobster/archive/refs/tags/v2026.9.tar.gz
+        sha256: 4f1de38fb65faf654092c407b2420411a6bfae0cdce186a97844e5f200a399ac
         dest: thirdparty/lobster
         x-checker-data:
           type: html
